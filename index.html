@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptar y Desencriptar</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main class="contenedor">
+
+      <div class="contenedor-logo">
+        <img class="contenedor-logo-img" src="./assets/Logo.png" alt="Logo" />
+      </div>
+
+      <div class="contenedor-entrada">
+        <div class="contenedor-entrada-text-area">
+          <textarea id="inputTextArea" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="contenedor-entrada-otros">
+          <p class="nota">🛈 Solo letras minúsculas y sin acentos</p>
+          <div class="botones">
+            <button id="btnEncrypt" class="btn-encrypt">Encriptar</button>
+            <button class="btn-decrypt">Desencriptar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor-salida">
+        <div class="contenedor-salida-vacio">
+          <img
+            class="contenedor-salida-img"
+            src="./assets/Muneco.png"
+            alt="Placeholder Image"
+          />
+          <p>Ningún mensaje fue encontrado</p>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+
+        <div class="contenedor-salida-lleno">
+          <textarea id="textoSalida" readonly></textarea>
+          <button id="btnCopiar" onclick="">
+            Copiar
+          </button>
+        </div>
+
+      </div>
+      
+    </main>
+
+    <script src="./scritps/scritp.js"></script>
+  </body>
+</html>
